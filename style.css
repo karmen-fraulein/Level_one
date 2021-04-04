@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green; 
+}
+.grey{
+    background-color: grey;
+}
+.pink{
+    background-color: pink;
+}
+.purple{
+    background-color: purple;
+}
+.black{
+    background-color: black;
+}
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.grow-1{
+    flex-grow: 1;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.text-white{
+    color: #fff;
+}
+
+
+.header div{
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 10px;
+}
+.hero div{
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+.body div{
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 20px;
+    height: 70%;
+}
+.purple div{
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 20px;
+    height: 80%;
+    width: 80%;
+}
+.footer div{
+    margin: 0 10px;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.header{
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+.hero{
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+.body{
+    grid-column: 1 / 3;
+    grid-row: 3/6;
+}
+.sidebar{
+    grid-row: 3/6;
+}
+.footer{
+    grid-column: 1 / 4;
+    grid-row: 6;
+}
+
+@media only screen and (max-width: 1040px){
+    .hero,.body{
+        flex-direction: column;
+    }
+    .hero div{
+        width: 96%;
+        margin: 10px 0;
+    }
+    .hero .last-div{
+        text-align: center;
+    }
+    .body .first-div{
+        width: 96%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .body .last-div{
+        width: 96%;
+        margin: 10px 0;
+    }
+    .body{
+        grid-column: 1 / 3;
+        grid-column: 1/4;
+    }
+    .sidebar{
+        grid-column: 1 / 4;
+        grid-row: 6;
+    }
+    .footer{
+        grid-row: 7;
+    }
+
+}
+@media only screen and (max-width: 400px){
+    .header{
+        flex-wrap: wrap;
+    }
+    .header .first-div{
+        width: 98%;
+        margin: 5px auto;
+        text-align: center;
+        
+    }
+    .sidebar{
+        display: none;
+        
+    }
+    .footer{
+        grid-column: 1 / 4;
+        grid-row: 6;
+    }
+}

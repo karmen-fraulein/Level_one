@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>JS Task</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center mt-5 w-100"><h3>Add Student</h3></div>
+ 
+        <div class="mt-5 row">
+            <input class="col-lg-2 m-1" type="text" id="student" placeholder="student name" required>
+            <input class="col-lg-2 m-1" type="number" id="front" placeholder="front-end grade" required>
+            <input class="col-lg-2 m-1" type="number" id="javascript" placeholder="javascript grade" required>
+            <input class="col-lg-2 m-1" type="number" id="css" placeholder="css grade" required>
+            <input class="col-lg-2 m-1" type="number" id="react" placeholder="react grade" required>
+            <button class="col-lg-2 m-1" id="button" class="btn btn-primary my-auto" onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5"><h3>Students List</h3></div>
+
+        <table class="table table-hover table-bordered"></table>
+
+    </div>
+
+
+
+    <script src="./variables.js"></script>
+    <script src="./helper-functions.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+body {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.change-background {
+  background-color: rgb(122, 157, 190);
+  transition-duration: 3s;
+}
+.add-background{
+  background-color: rgb(209, 230, 250);
+  transition-duration: 3s;
+}
+
+.navbar {
+  background-color: rgb(82, 110, 136);
+}
+.navbar a {
+  color: aliceblue;
+  font-size: 22px;
+  font-style: italic;
+}
+.search-div {
+  height: 100px;
+}
+
+.input-div {
+  width: 70%;
+  min-height: 80vh;
+  text-align: center;
+  margin: auto;
+}
+.main-input {
+  border: none;
+  background-color: rgb(164, 195, 224);
+  color: rgb(22, 22, 21);
+  text-align: center;
+  outline: none;
+  width: 63%;
+  height: 29px;
+}
+
+.sub-button {
+  height: 100%;
+  border-color: rgb(82, 110, 136) !important;
+  outline: none !important;
+  background-color: rgb(82, 110, 136) !important;
+  color: blanchedalmond;
+}
+
+.list-div {
+  min-height: 100vh;
+  padding: 0 20px 0 20px;
+}
+
+.list-div h1 {
+  margin: 5%;
+  color: rgb(82, 110, 136);
+}
+.searching-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-height: 100vh;
+  width: 100%;
+}
+.list-item {
+  background-color: rgb(82, 110, 136);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  border-radius: 4px;
+  height: 49vh;
+  width: 20vw;
+}
+
+.link {
+  width: 100%;
+}
+
+.list-item:hover {
+  box-shadow: 0 0 5px #050505;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+
+.link-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

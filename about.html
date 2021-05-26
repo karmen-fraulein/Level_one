@@ -1,0 +1,596 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="test.scss" />
+    <link rel="icon" href="./images/ll.PNG" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <title>Multikart</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="
+              top-nav
+              d-flex
+              bg-light
+              justify-content-between
+              px-4
+              align-items-center
+              text-center
+            ">
+            <div class="top-left d-flex p-2">
+                <p class="text-secondary">Welcome to Our store Multikart</p>
+                <div class="d-flex ml-5">
+                    <p class="text-secondary">
+                        <i class="fas fa-phone-alt phone"></i>Call Us:123-456-7890
+                    </p>
+                </div>
+            </div>
+            <div class="top-right d-flex justify-content-end p-2">
+                <div class="d-flex">
+                    <p class="text-secondary">
+                        <i class="fas fa-heart text-secondary mr-5"></i>
+
+                        <i class="fas fa-user text-secondary"></i> My Account
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!---Nav bar---->
+        <nav class="
+              nav__bar
+              d-flex
+              justify-content-between
+              align-items-center
+              text-center
+              container-fluid
+            ">
+            <div class="burger-menu">
+                <div class="burger d-flex">
+                    <button class="sidebar-toggle">
+                        <i class="fas fa-bars text-red"></i>
+                    </button>
+                    <aside class="sidebar">
+                        <div class="sidebar-header">
+                            <img src="./images/logo.png" class="logo" alt="" />
+                            <button class="close-btn"><i class="fas fa-times"></i></button>
+                        </div>
+                        <!-- links -->
+                        <ul class="links">
+                            <li>
+                                <a href="#">home</a>
+                            </li>
+                            <li>
+                                <a href="#">Feature</a>
+                            </li>
+                            <li>
+                                <a href="#">shop</a>
+                            </li>
+                            <li>
+                                <a href="#">product</a>
+                            </li>
+                            <li>
+                                <a href="#">pages</a>
+                            </li>
+                            <li>
+                                <a href="#">blog</a>
+                            </li>
+                        </ul>
+
+                    </aside>
+
+                    <div class="logo">
+                        <img src="./images/logo.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="nav-bar">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    FEATURE
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SHOP
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    PRODUCT
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    PAGES
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    BLOG
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-icons ml-5">
+                        <i class="fal fa-search"></i>
+                        <i class="fal fa-cog"></i>
+                        <i class="fal fa-shopping-cart"></i>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        <!----Nav bar end--->
+    </header>
+    <main>
+        <div class="container-fluid bg-light">
+            <div class=" container">
+                <div class="row">
+                    <div class=" title col-xl-10 col-md-10">
+                        <h6 class="fw-bolder">COLLECTION</h6>
+                    </div>
+                    <div class="title-href col-xl-2 col-md-2">
+                        <a class="text-secondary" href="#">HOME / COLLECTION</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container d-flex mt-5">
+
+            <!---collapse-->
+            <div class=" col-4">
+                <div id="accordion">
+
+                    <!-----brand----->
+                    <div class="card">
+                        <div class="card-header border-0" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-dark fw-bolder " data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    BRAND
+
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        ZARA
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        VERA-MODA
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        FOREVER-21
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        ROADSTER
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        ONLY
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----brand end----->
+
+                    <!----color-->
+                    <div class="card">
+                        <div class="card-header border-0" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark fw-bolder" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    COLORS
+
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="colors">
+                                    <ul class="d-flex collapse-ul p-0">
+                                        <li class="color1 active"></li>
+                                        <li class="color2"></li>
+                                        <li class="color3"></li>
+                                        <li class="color4"></li>
+                                        <li class="color5"></li>
+                                        <li class="color6"></li>
+                                        <li class="color7"></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!---color end------>
+
+                    <!--size----->
+                    <div class="card">
+                        <div class="card-header border-0" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark fw-bolder" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    SIZE
+
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        S
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        M
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        L
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        XL
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---size end---->
+
+                    <!---price----->
+                    <div class="card">
+                        <div class="card-header border-0" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark fw-bolder" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    PRICE
+
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <label for="customRange2" class="form-label">Example range</label>
+                                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                            </div>
+                        </div>
+                    </div>
+                    <!---price end----->
+
+                </div>
+
+                <!--sidebar slider---->
+                <div class=" row mt-5">
+                    <div class="col-6">
+                        <h5>NEW PRODUCT</h5>
+                    </div>
+                    <div class="sidebar-icons col-6">
+                        <i class="fas fa-chevron-left"></i>
+                        <i class="fas fa-chevron-right"></i>
+
+                    </div>
+                    <!----sidebar cards-------->
+                    <div class="card mb-3 mt-5" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img class="w-100 mt-5" src="./images/saidcard1.jpeg" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star last side-star"></i>
+                                    </h5>
+                                    <p class="card-text">Slim Fit Cotton Shirt</p>
+                                    <h5>$500.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 " style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img class="w-100 mt-5" src="./images/saidcard2.jpeg" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star last side-star"></i>
+                                    </h5>
+                                    <p class="card-text">Slim Fit Cotton Shirt</p>
+                                    <h5>$500.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-5" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img class="w-100 mt-5" src="./images/saidcard3.jpeg" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star side-star"></i>
+                                        <i class="fa fa-star last side-star"></i>
+                                    </h5>
+                                    <p class="card-text">Slim Fit Cotton Shirt</p>
+                                    <h5>$500.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-5">
+                        <img class="w-100" src="./images/side-banner.png" alt="">
+                    </div>
+
+
+                </div>
+                <!---collapse end-->
+            </div>
+
+            <!--fetch section---->
+            <div class=" col-8">
+                <!---banner--->
+                <div class="banner container-fluid">
+                    <img src="./images/bacground.jpeg" alt="">
+                </div>
+                <!---banner end--->
+
+                <!--banner information container---->
+                <div class="container-fluid mt-5">
+                    <h6 class="fw-bolder">BIGGEST DEALS ON TOP BRANDS</h6>
+                    <p>The trick to choosing the best wear for yourself is to keep in mind your body type, individual
+                        style, occasion and also
+                        the time of day or weather. In addition to eye-catching products from top brands, we also offer
+                        an easy 30-day return
+                        and exchange policy, free and fast shipping across all pin codes, cash or card on delivery
+                        option, deals and discounts,
+                        among other perks. So, sign up now and shop for westarn wear to your heart’s content on
+                        Multikart.</p>
+                </div>
+                <!--banner information container end---->
+
+                <!---table container-->
+                <div class="container-fluid border mt-5 mb-5 ">
+                    <div class="row first-row text-center border-bottom">
+                        <h6 class=" fw-bolder">Showing Products 1-24 Of 10 Result</h6>
+                    </div>
+                    <div class="row table-row ">
+                        <div class="col-4  ">
+                            <div class="icons row ">
+                                <div class="col-4">
+                                    <i class="fas fa-th"></i>
+                                    <i class="fas fa-list-ul"></i>
+                                </div>
+                                <div class="col-8 icon-img">
+                                    <img class="" src="./images/line1.png" alt="">
+                                    <img src="./images/line2.png" alt="">
+                                    <img src="./images/line3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <select class="form-select border-0 " id="selectProduct">
+                                <option selected>Select items</option>
+                                <option value="10"> 10 Products Par Page</option>
+                                <option value="15">15 Products Par Page</option>
+                                <option value="20">20 Products Par Page</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select border-0 ">
+                                <option selected>Sorting items</option>
+                                <option value="1">50 Products</option>
+                                <option value="2">100 Products</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!---table container end-->
+
+                <!---card fetch-->
+
+                <div class="d-flex flex-wrap cards " id="cards">
+
+                </div>
+                <!---card fetch end-->
+            </div>
+        </div>
+    </main>
+
+    <!----maind end-->
+    <!--Footer---->
+    <footer class="container">
+        <div class="d-flex">
+            <div class="border-right">
+                <h5 class="font-weight-bold">KNOW IT ALL FIRST!</h5>
+                <p>
+                    Never Miss Anything From Multikart By Signing Up To Our Newsletter.
+                </p>
+            </div>
+            <div class="flex-fill">
+                <div class="form-row justify-content-end">
+                    <div class="col-sm-5 my-1">
+                        <input type="text" class="form-control w-100" id="inlineFormInputName"
+                            placeholder="Enter Your Email" />
+                    </div>
+                    <div class="col-auto my-1">
+                        <button type="submit" class="btn btn-danger font-weight-bold">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex">
+            <div class="d-flex-column flex-fill">
+                <img src="./images/logo.png " />
+                <p class="mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    <br />
+                    enim ad minim veniam,
+                </p>
+                <div class="icon-div d-flex-row mt-5">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa fa-rss"></i>
+                </div>
+            </div>
+            <div class="d-flex-column flex-fill">
+
+                <ul class="list-group-item bg-light">
+                    <h5 class=" font-weight-bold">MY ACCOUNT</h5>
+                    <li>Mens</li>
+                    <li>Womens</li>
+                    <li>Clothing</p>
+                    <li>Accessories</li>
+                    <li>Featured</li>
+                </ul>
+
+            </div>
+            <div class="d-flex-column flex-fill">
+
+                <ul class="list-group-item bg-light">
+                    <h5 class="font-weight-bold">WHY WE CHOOSE</h5>
+                    <li>Shopping & return</li>
+                    <li>Secure Shopping</li>
+                    <li>Gallery</p>
+                    <li>Affiliates</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+            <div class="d-flex-column flex-fill">
+
+                <ul class="list-group-item bg-light">
+                    <h5 class="font-weight-bold">STORE INFORMATION</h5>
+                    <li><i class="fas fa-map-marker-alt"></i>
+                        Multikart Demo Store, Demo store India 345-659
+
+                    </li>
+                    <li><i class="fas fa-phone-alt"></i>Call Us: 123-456-7898</li>
+                    <li><i class="far fa-envelope"></i>Email Us: <br>Support@Fiot.com </li>
+                    <li><i class="fa fa-fax"></i>Fax: 123456</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./active.js"></script>
+    <script src="./fetch.js"></script>
+</body>
+
+</html>

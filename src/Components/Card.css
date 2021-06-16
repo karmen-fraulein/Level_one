@@ -1,0 +1,11 @@
+.card{
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    position: fixed;
+    top: 24vh;
+    left: 25%;
+    width: 44%;
+    z-index: 100;
+    overflow: hidden;
+    height: 350px;
+}

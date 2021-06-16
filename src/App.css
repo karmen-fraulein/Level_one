@@ -1,0 +1,19 @@
+.app_form{
+  text-align: center;
+} 
+.app_form input{
+    width: 70%;
+    height: 1.5rem;
+    border-radius: -2px;
+    outline: none;
+    margin-top: 10px;
+}
+.app-div{
+  display: flex;
+  justify-content: space-around;
+}
+.app-main-div{
+  width: 55%;
+  margin: auto;
+}
+

@@ -73,7 +73,7 @@ function CustomForm() {
   if(status ===  201){
     return (
       <div className="submit-div">
-        <h1>Submitted!</h1>
+        <h1>Submittsed!</h1>
       </div>
     )
   }

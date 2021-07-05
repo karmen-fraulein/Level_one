@@ -6,7 +6,8 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        boxShadow: 'none'
+        boxShadow: 'none',
+        width: '100%',
     },
     
     menuButton: {

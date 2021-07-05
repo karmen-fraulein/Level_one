@@ -22,11 +22,11 @@ const Footer = () => {
                         </Grid>
                         <Grid item sm={3} xs={12}>
                             <Paper className={classes.paper}>
-                                <Link className={classes.social} href="/" color="inherit"><i class="fab fa-facebook-f"></i></Link>
-                                <Link className={classes.social} href="/" color="inherit"><i class="fab fa-twitter"></i></Link>
-                                <Link className={classes.social} href="/" color="inherit"><i class="fab fa-google-plus-g"></i></Link>
-                                <Link className={classes.social} href="/" color="inherit"><i class="fab fa-linkedin-in"></i></Link>
-                                <Link className={classes.social} href="/" color="inherit"><i class="fab fa-instagram"></i></Link>
+                                <Link className={classes.social} href="/" color="inherit"><i className="fab fa-facebook-f"></i></Link>
+                                <Link className={classes.social} href="/" color="inherit"><i className="fab fa-twitter"></i></Link>
+                                <Link className={classes.social} href="/" color="inherit"><i className="fab fa-google-plus-g"></i></Link>
+                                <Link className={classes.social} href="/" color="inherit"><i className="fab fa-linkedin-in"></i></Link>
+                                <Link className={classes.social} href="/" color="inherit"><i className="fab fa-instagram"></i></Link>
                             </Paper>
                         </Grid>
                     </div>

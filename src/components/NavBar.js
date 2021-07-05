@@ -44,10 +44,10 @@ const NavBar = () => {
 
           <Typography variant="h6" className={classes.title}>
             {/* <FontAwesomeIcon icon={'fab'}/> */}
-                      <i class="fab fa-mdb"></i>
+                      <i className="fab fa-mdb"></i>
           </Typography>
           {/* ფედინგების წაშლოა ლისთებისთვის?*/}
-          <List className={classes.root}>
+          <List className={classes.root} display={{ xs: 'none', md: 'block' }}>
             <Link>
               <Badge badgeContent={1} color="secondary"></Badge>
               <Box component="span" ml={1.5} color="white">

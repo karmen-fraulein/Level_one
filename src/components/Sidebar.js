@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { Rating } from '@material-ui/lab';
 
-import { Grid, Sizing, Box, Link, Typography, TextField, Button, Checkbox, FormControlLabel, RadioGroup, Radio, Slider } from '@material-ui/core';
+import { Grid, Sizing, Box, Container, Link, Typography, TextField, Button, Checkbox, FormControlLabel, RadioGroup, Radio, Slider } from '@material-ui/core';
+import Marker from "./Marker";
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -18,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
         display: 'block',
     },
     star:{
-        padding: '17px 3px',
         color: '#007bff',
     },
     span:{
@@ -30,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     margin: {
         height: theme.spacing(3),
     },
+
     
     
     
@@ -39,13 +42,14 @@ const Main = () => {
     const [checked, setChecked] = useState(true);
     const classes = useStyles();
     return (
-        <Grid container spacing={5} className={classes.root}>
 
 
 
 
 
-            <Grid item xs={12} sm={4}>
+
+
+            <>
                 <Box >
                     <Box  fontWeight={900} lineHeight={2} fontSize={20}>
                         <Typography variant ='h5'>
@@ -154,94 +158,36 @@ const Main = () => {
                             Avg. Customer Review
 
                         </Typography>
-                        <Box display='flex'>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="fas fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="fas fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="fas fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="fas fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="far fa-star"></i>
-                                
-                            </Link>
-                            <Link href="/" color="inherit">
-                                <p>& UP</p>
+                        <Box component="fieldset" p={0} borderColor="transparent">
+                            <Box display="flex" alignItems="center">
+                                <Rating defaultValue={4} className={classes.star} readOnly />
+                                <Box component='h5'>& UP</Box>
+                            </Box>
 
-                            </Link>
                         </Box>
-                        <Box display='flex'>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="fas fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="fas fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="fas fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="far fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="far fa-star"></i>
+                        <Box component="fieldset" p={0} borderColor="transparent">
+                            <Box display="flex" alignItems="center">
+                                <Rating defaultValue={3} className={classes.star} readOnly />
+                                <Box component='h5'>& UP</Box>
+                            </Box>
 
-                            </Link>
-                            <Link href="/" color="inherit">
-                                <p>& UP</p>
-
-                            </Link>
                         </Box>
-                        <Box display='flex'>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="fas fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="fas fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="far fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="far fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="far fa-star"></i>
+                        <Box component="fieldset"p={0} borderColor="transparent">
+                            <Box display="flex" alignItems="center">
+                                <Rating defaultValue={2} className={classes.star} readOnly />
+                                <Box component='h5'>& UP</Box>
+                            </Box>
 
-                            </Link>
-                            <Link href="/" color="inherit">
-                                <p>& UP</p>
-
-                            </Link>
                         </Box>
-                        <Box display='flex'>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="fas fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="far fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="far fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="far fa-star"></i>
-                            </Link>
-                            <Link href="/" color="inherit" className={classes.star}>
-                                <i className="far fa-star"></i>
+                        <Box component="fieldset" p={0}  borderColor="transparent">
+                            <Box display="flex" alignItems="center">
+                                <Rating defaultValue={1} className={classes.star} readOnly />
+                                <Box component='h5'>& UP</Box>
+                            </Box>
 
-                            </Link>
-                            <Link href="/" color="inherit">
-                                <p>& UP</p>
-
-                            </Link>
                         </Box>
+
+
 
                     </Box>
                     <Box>
@@ -281,6 +227,56 @@ const Main = () => {
                         />
 
                     </Box>
+                    <Box>
+                        <Typography variant='h6'>
+                            Size
+                        </Typography>
+                        <Box component="div" >
+
+                            <FormControlLabel
+                                control={<Checkbox
+
+                                    color="primary"
+                                    inputProps={{ 'aria-label': 'secondary checkbox' }}
+
+                                />}
+                                label="34"
+                                className={classes.label}
+
+                            />
+                            <FormControlLabel
+                                control={<Checkbox
+
+                                    color="primary"
+                                    inputProps={{ 'aria-label': 'secondary checkbox' }}
+
+                                />}
+                                label="36"
+                                className={classes.label}
+                            />
+                            <FormControlLabel
+                                control={<Checkbox
+
+                                    color="primary"
+                                    inputProps={{ 'aria-label': 'secondary checkbox' }}
+
+                                />}
+                                label="38"
+                                className={classes.label}
+                            />
+                            <FormControlLabel
+                                control={<Checkbox
+                                    color="primary"
+                                    inputProps={{ 'aria-label': 'secondary checkbox' }}
+
+                                />}
+                                label="40"
+                                className={classes.label}
+                            />
+                        </Box>
+                    </Box>
+
+                    {/*<Marker />*/}
 
                     
 
@@ -303,18 +299,12 @@ const Main = () => {
 
 
 
-            </Grid>
-            <Grid item xs={12} sm={8}>
-                <Box >
-                    jsbjgdhd
-                </Box>
+            </>
 
 
 
-            </Grid>
 
 
-        </Grid>
     )
 }
 

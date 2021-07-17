@@ -69,6 +69,7 @@ function SidebarAdmin(props) {
             <Divider />
             <List>
                 {['products', 'users', 'categories'].map((text, index) => (
+                    
                     <ListItem button key={text}>
                         <ListItemIcon>{index % 2 !== 0 ? <AccountCircleIcon /> : <CategoryIcon /> }</ListItemIcon>
                         <ListItemText primary={text} />

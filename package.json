@@ -10,6 +10,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.58",
     "cra-template": "1.1.2",
+    "formik": "^2.2.9",
     "material-dashboard-react": "^1.10.0",
     "material-ui-responsive-drawer": "^1.0.98",
     "react": "^17.0.2",

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
-import fullData from '../../Api';
+import fullData from '../../../Api';
 import './App.css';
 
 const Single = () => {

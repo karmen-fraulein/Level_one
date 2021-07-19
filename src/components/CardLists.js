@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import VerticalCards from "./VerticalCards";
 
 import fullData from '../Api';
+import API from "../fetchApi";
 
 const useStyle = makeStyles({
   cardList: {
@@ -32,9 +33,12 @@ function CardLists() {
   const [listStyle, setListStyle] = useState("gridView");
 
   const [data, setData] = useState([]);
-  
-  useEffect(() => setData(fullData),[]);
-  console.log(data)
+
+  useEffect(()=>{
+    API.getAllData('/products').then((product)=>{
+      setData(product)
+    })
+  },[])
 
 
   return (

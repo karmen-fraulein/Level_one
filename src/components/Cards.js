@@ -83,7 +83,7 @@ function Cards({data}) {
             <CardMedia
               component="img"
               className={classes.media}
-              image={data.img}
+              image={data.image}
               title="Contemplative Reptile"
             />
           </Box>

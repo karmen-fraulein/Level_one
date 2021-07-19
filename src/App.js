@@ -9,14 +9,14 @@ import MainHome from "./components/MainHome";
 
 import {ADMIN, MAIN_HOME, SINGLE} from "./rote";
 import AdminLayout from "./leyout/AdminLayout";
-import AdminPage from "./components/pages/AdminPage";
+import AdminPage from "./components/pages/admin/AdminPage";
 
 function App() {
   return (
     <div>
       <Switch>
         
-          <Route path={ADMIN} exact>
+          <Route path={ADMIN} >
             <AdminLayout>
             <AdminPage />
             </AdminLayout>

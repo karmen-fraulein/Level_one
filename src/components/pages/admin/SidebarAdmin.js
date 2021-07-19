@@ -17,6 +17,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
+import { ADMIN } from '../../../rote';
 
 const drawerWidth = 240;
 
@@ -67,13 +69,16 @@ function SidebarAdmin(props) {
         <div>
             <div className={classes.toolbar} />
             <Divider />
+
             <List>
                 {['products', 'users', 'categories'].map((text, index) => (
+                    <Link to={ADMIN + '/' + text}  >
+                        <ListItem button key={text}>
+                            <ListItemIcon>{index % 2 !== 0 ? <AccountCircleIcon /> : <CategoryIcon />}</ListItemIcon>
+                            <ListItemText primary={text} />
+                        </ListItem>
+                    </Link>
                     
-                    <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 !== 0 ? <AccountCircleIcon /> : <CategoryIcon /> }</ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
                 ))}
             </List>
             

@@ -26,7 +26,7 @@ const rows = [
     createData('Gingerbread', 356, 16.0, 49, 3.9),
 ];
 
-export default function TablesAdmin() {
+export default function CategoriesTable() {
     const classes = useStyles();
 
     return (

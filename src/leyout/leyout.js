@@ -3,11 +3,11 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer';
 
 
-const leyout = ({children}) => {
+const leyout = (props) => {
     return (
         <>
             <NavBar />
-            {children}
+            {props.children}
             <Footer />
         </>
     )

@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import fullData from '../../../Api';
 import './App.css';
 
-const Single = () => {
+const Single = ({}) => {
     const {Id} = useParams();
     let parseId = parseInt(Id.replace(':', ''))
     const [singleData, setSingleData]= useState({})

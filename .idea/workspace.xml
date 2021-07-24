@@ -2,27 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eeaa258-bb80-486b-8285-fc7eb803f957" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/pages/admin/AdminPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/admin/categories/CategoriesForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/admin/categories/CategoriesInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/admin/categories/CategoriesModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/admin/categories/CategoriesTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/admin/products/ProductsForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/admin/products/ProductsInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/admin/products/ProductsModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/admin/products/TableProducts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/admin/user/UserInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fetchApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/userLogin/FormikLogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/userLogin/FormikRegister.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/userLogin/UserLogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/userLogin/UserRegistration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/auth-context.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardLists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/AdminPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ModalForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/admin/user/TransitionModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/ModalFormik.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/admin/user/SignupForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/SidebarAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/admin/SidebarAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/TablesAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/admin/user/TablesUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/singlePage/Single.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/singlePage/Single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leyout/leyout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leyout/leyout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/rote.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +57,8 @@
       <workItem from="1625557450482" duration="17283000" />
       <workItem from="1626525247799" duration="265000" />
       <workItem from="1626681008224" duration="10874000" />
+      <workItem from="1626864851958" duration="7457000" />
+      <workItem from="1626963334792" duration="26551000" />
     </task>
     <servers />
   </component>

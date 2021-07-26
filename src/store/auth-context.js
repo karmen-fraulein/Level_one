@@ -4,7 +4,8 @@ import React, {useEffect, useState} from 'react';
 
     isLoggedIn: false,
      onLogout: () => {},
-     onLogin: (email, password) => {}
+     onLogin: (email, password) => {},
+
 })
 
 
@@ -13,7 +14,6 @@ export const AuthContextProvider = (props) => {
 
     const [data, setData] = useState({})
     let userInfoFetch = (email, password) => {
-         console.log(email,password)
         fetch("http://159.65.126.180/api/auth/login", {
             method: "POST",
             headers: {
@@ -26,6 +26,7 @@ export const AuthContextProvider = (props) => {
             })
         })
             .then((res) => {
+                setIsLoggedIn(res.ok)
                 return res.json();
             })
             .then((user) => {
@@ -57,7 +58,8 @@ export const AuthContextProvider = (props) => {
          <AuthContext.Provider value={{
              isLoggedIn: isLoggedIn,
              onLogout: LogoutHandler,
-             onLogin: LoginHandler
+             onLogin: LoginHandler,
+             userData: data,
          }
          }>
              {props.children}

@@ -87,7 +87,7 @@ function FormikLogin(props) {
     },
     // validationSchema :{Schema},
     onSubmit: (values) => {
-            console.log(values)
+
         // event.preventDefault();
         ctxCont.onLogin(values.email, values.password);
     }

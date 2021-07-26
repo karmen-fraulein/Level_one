@@ -21,6 +21,8 @@ import {
 import { Link } from 'react-router-dom';
 import {USERLOGIN} from "../rote";
 import AuthContext from "../store/auth-context";
+import SingleUserInfo from "./SingleUserInfo";
+import GuestUser from "./GuestUser";
 // import MenuIcon from '@material-ui/icons/Menu';
 
 //კითხვა:
@@ -75,20 +77,7 @@ const onNavbarHandler = () => {
                             Contact
                           </Mlink>
                         </Box>
-                        <Box color="white" ml={1.5}>
-                          {ctx.isLoggedIn ? <Mlink component={Link} to ={USERLOGIN} href="/" color="inherit"onClick={ctx.onLogout}>
-                            Log out
-                          </Mlink>
-                              :
-                              <Mlink component={Link} to ={USERLOGIN} href="/" color="inherit">
-                            Sign in
-                          </Mlink>}
-                        </Box>
-                        <Box color="white" ml={1.5}>
-                          <Mlink href="/" color="inherit" className={classes.link} >
-                            SIGN UP
-                          </Mlink>
-                        </Box>
+                        {ctx.isLoggedIn ? <SingleUserInfo /> : <GuestUser /> }
                       </List>
 
                     </Grid>

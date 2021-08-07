@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3eeaa258-bb80-486b-8285-fc7eb803f957" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GuestUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GuestUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SingleUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleUserInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/userLogin/FormikLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/userLogin/FormikLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/useStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/useStyles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/auth-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth-context.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,8 @@
       <workItem from="1626681008224" duration="10874000" />
       <workItem from="1626864851958" duration="7457000" />
       <workItem from="1626963334792" duration="26551000" />
-      <workItem from="1627160747601" duration="6307000" />
+      <workItem from="1627160747601" duration="11686000" />
+      <workItem from="1628162923791" duration="576000" />
     </task>
     <servers />
   </component>

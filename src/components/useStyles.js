@@ -119,6 +119,10 @@ const useStyles = makeStyles((theme) => ({
 
     }
   },
+  avatar: {
+    width: '30px',
+    height: '30px',
+  },
   active:{
     display: 'flex',
   },

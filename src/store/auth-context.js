@@ -31,6 +31,8 @@ export const AuthContextProvider = (props) => {
             })
             .then((user) => {
                 setData(user);
+                localStorage.setItem('token',user.token.access_token);
+                console.log(user)
             })
             .catch((e) => console.log(e));
     };
@@ -41,15 +43,25 @@ export const AuthContextProvider = (props) => {
         if(storeData === '1'){
             setIsLoggedIn(true)
         }
+
+            let token = localStorage.getItem('token')
+            fetch('http://159.65.126.180/api/auth/me',{
+                method: 'POST',
+                headers:{
+                    Authorization:`Bearer ${token}`
+                }
+            }).then(res => res.json()).then(data => setData(data))
+
     },[])
 
     const LogoutHandler =() => {
          localStorage.removeItem('isLoggedIn')
+        localStorage.removeItem('token')
         setIsLoggedIn(false)
     }
     const LoginHandler = (email, password) =>{
-        // localStorage.setItem('isLoggedIn','1');
-        // setIsLoggedIn(true)
+        localStorage.setItem('isLoggedIn','1');
+        setIsLoggedIn(true)
         userInfoFetch(email, password)
     }
 

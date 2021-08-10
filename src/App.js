@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import {useContext, useEffect} from "react";
 import Banner from "./components/Banner";
 import {Switch, Route, Redirect} from "react-router-dom";
 import Leyout from "./leyout/leyout";
@@ -10,10 +10,23 @@ import AdminPage from "./components/pages/admin/AdminPage";
 import UserLogin from "./components/pages/userLogin/UserLogin";
 import UserRegistration from "./components/pages/userLogin/UserRegistration";
 import AuthContex from "./store/auth-context";
+import {useDispatch, useSelector} from "react-redux";
+import {tokenHandler} from "./store/user/userActions";
 
 
 function App() {
   const ctx = useContext(AuthContex)
+  const isloggedIn = useSelector(state => state.user.isloggedIn)
+  const dispatch = useDispatch()
+  useEffect(()  =>  {
+    let token = localStorage.getItem('token')
+
+    if(token){
+      dispatch(tokenHandler(token))
+    }
+
+
+  },[])
 
   return (
       <>
@@ -40,7 +53,7 @@ function App() {
             <Single />
           </Route>
           <Route path={USERLOGIN}>
-            {ctx.isLoggedIn && <Redirect to ={MAIN_HOME}/>}
+            {isloggedIn && <Redirect to ={MAIN_HOME}/>}
           <UserLogin />
           </Route>
           <Route path={REGISTER}>

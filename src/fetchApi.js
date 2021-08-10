@@ -17,7 +17,15 @@ const API = {
         }).then((data) =>{
             return data
         })
+    },
+    userLoggedin: function (email, password){
+        let userInfo = {
+            email,
+            password,
+        }
+        return this.getData('auth/login',userInfo, 'POST')
     }
+
 }
 
 

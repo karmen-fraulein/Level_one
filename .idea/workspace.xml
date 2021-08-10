@@ -3,10 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="3eeaa258-bb80-486b-8285-fc7eb803f957" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SingleUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SingleUserInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/userLogin/FormikLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/userLogin/FormikLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/useStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/useStyles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/auth-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth-context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fetchApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fetchApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/rootReduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/rootReduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/userActionConst.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/userActionConst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/userActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/userActionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/userActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/userRedusers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/userRedusers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +25,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1uvsFJFfwIRAm6KByiVOYDRpvXw" />
   <component name="ProjectViewState">
@@ -52,6 +70,7 @@
       <workItem from="1626963334792" duration="26551000" />
       <workItem from="1627160747601" duration="11686000" />
       <workItem from="1628162923791" duration="576000" />
+      <workItem from="1628441416139" duration="10682000" />
     </task>
     <servers />
   </component>

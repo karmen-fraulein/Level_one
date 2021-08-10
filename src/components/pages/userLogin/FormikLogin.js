@@ -6,6 +6,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import {Link} from "react-router-dom";
 import {REGISTER} from "../../../rote";
 import AuthContext from "../../../store/auth-context";
+import {useDispatch} from "react-redux";
+import {logginHandler} from "../../../store/user/userActions";
+
 
 const useStyles = makeStyles(() => ({
     form:{
@@ -75,6 +78,7 @@ const Schema = Yup.object().shape({
 });
 
 function FormikLogin(props) {
+    const dispatch = useDispatch()
     const [enteredEmail, setEnteredEmail] = useState('');
     const [enteredPassword, setEnteredPassword] = useState('');
     const ctxCont = useContext(AuthContext)
@@ -89,7 +93,9 @@ function FormikLogin(props) {
     onSubmit: (values) => {
 
         // event.preventDefault();
-        ctxCont.onLogin(values.email, values.password);
+        // ctxCont.onLogin(values.email, values.password);
+
+        dispatch(logginHandler(values.email, values.password))
     }
     })
 

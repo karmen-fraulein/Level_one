@@ -5,6 +5,7 @@ import Badge from "@material-ui/core/Badge";
 
 
 
+
 import {
   AppBar,
   Box,
@@ -23,6 +24,7 @@ import {USERLOGIN} from "../rote";
 import AuthContext from "../store/auth-context";
 import SingleUserInfo from "./SingleUserInfo";
 import GuestUser from "./GuestUser";
+import {useSelector} from "react-redux";
 // import MenuIcon from '@material-ui/icons/Menu';
 
 //კითხვა:
@@ -32,6 +34,8 @@ import GuestUser from "./GuestUser";
 const NavBar = () => {
   const classes = useStyles();
   const ctx = useContext(AuthContext)
+  const isLoggedIn = useSelector(state => state.user.isloggedIn)
+
 
 
 const [navigation, setNavigation] = useState(false)
@@ -77,7 +81,7 @@ const onNavbarHandler = () => {
                             Contact
                           </Mlink>
                         </Box>
-                        {ctx.isLoggedIn ? <SingleUserInfo /> : <GuestUser /> }
+                        {isLoggedIn ? <SingleUserInfo /> : <GuestUser /> }
                       </List>
 
                     </Grid>

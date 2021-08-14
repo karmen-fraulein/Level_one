@@ -28,26 +28,26 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 
-function SingleProductiformation() {
+function SingleProductiformation({singleData}) {
     const classes = useStyles();
     const [count, setCount] = useState(1);
     return (
         <Grid item xs={12} sm={12} md={6} >
         <Box  className={classes.firstInfoDiv}>
             <Typography variant="h5">
-                    Blue denim shirt
+                   {singleData.title}
             </Typography>
             <Typography variant="paragraf">
-                    SHIRTS
+                    {singleData.category}
             </Typography>
                 <Box component="div" mb={3} borderColor="transparent" className={classes.fieldset}>
                     <Rating name="read-only" defaultValue ={3} readOnly className={classes.star} />
                 </Box>
                 <Typography variant="h6" className={classes.fieldset}>
-                    $17.99
+                    {singleData.price}%
                 </Typography>
                 <Typography variant="paragraf" className={classes.fieldset}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam. Distinctio, officia quis dolore quos sapiente tempore alias.
+                    {singleData.description}
                 </Typography>
                 <Grid sm={6} xs={12} >
                     <Box marginTop='30px' fontSize='15px' color='#4F4F4F' display='flex' justifyContent='space-between'>

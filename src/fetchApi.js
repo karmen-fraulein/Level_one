@@ -18,6 +18,16 @@ const API = {
             return data
         })
     },
+
+    getSingleProduct: function(id){
+        return this.getData(`products/${id}`).then((res) =>{
+            return res.json()
+        }).then((data) => {
+            return data
+        })
+
+    },
+
     userLoggedin: function (email, password){
         let userInfo = {
             email,

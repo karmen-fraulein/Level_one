@@ -1,27 +1,38 @@
 import React from 'react';
-import { Grid, Box } from '@material-ui/core';
+import { Grid, Box,CardMedia } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles((theme) => ({
     firsBox: {
-        width: "100%",
-        height: "auto",
+        width: "61%",
+        margin: 'auto',
+        
     },
     lastBox:{
-        display:"flex"
+        display:"flex",
+        justifyContent: 'space-evenly',
+    },
+    cardmedia:{
+        height: '390px',
+        width: '348px',
+        margin: 'auto',
+    },
+    lastCardmedia:{
+        width: '100px',
+        height:'110px'
     }
 }))
 
-function SingleProductImg() {
+function SingleProductImg({singleData}) {
     const classes = useStyles();
     return (
         <Grid item xs={12} sm={12} md={6}>
-            <Box className={classes.firsBox}>kjdkjk</Box>
+            <Box className={classes.firsBox}><CardMedia image={singleData.image} className={classes.cardmedia} /></Box>
             <Box className={classes.lastBox}>
-                <span>img</span>
-                <span>img</span>
-                <span>img</span>
-                <span>img</span>
+                <CardMedia image={singleData.image} className={classes.lastCardmedia} />
+                <CardMedia image={singleData.image} className={classes.lastCardmedia}/>
+                <CardMedia image={singleData.image} className={classes.lastCardmedia}/>
+                <CardMedia image={singleData.image} className={classes.lastCardmedia}/>
                 </Box>
         </Grid>
     )

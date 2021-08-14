@@ -39,9 +39,9 @@ export const tokenHandler =(token) => (dispatch) => {
         if (res.ok) {
             return res.json()
         }
-        // else {
-        //     throw new Error('');
-        // }
+        else {
+            localStorage.removeItem('token')
+        }
     }).then(data => {
 
 

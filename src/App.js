@@ -1,7 +1,7 @@
 import {useContext, useEffect} from "react";
 import Banner from "./components/Banner";
 import {Switch, Route, Redirect} from "react-router-dom";
-import Leyout from "./leyout/leyout";
+import Leyout from "./leyout/Leyout";
 import Single from "./components/pages/singlePage/Single";
 import MainHome from "./components/MainHome";
 import {ADMIN, MAIN_HOME, SINGLE, USERLOGIN, REGISTER} from "./rote";

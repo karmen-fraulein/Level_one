@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/styles';
 import SingleProductImg from './SingleProductImg';
 import SingleProductiformation from './SingleProductiformation';
 import Details from './Details';
+import API from '../../../fetchApi';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,15 +23,10 @@ const Single = ({}) => {
     let parseId = parseInt(Id.replace(':', ''))
     const [singleData, setSingleData]= useState({})
 
-    const getCurrentData = () => {
-        fullData.map((e) =>{
-            if (e.id === parseId){
-                setSingleData(e);
-            }
-        })
-    }
+    
     useEffect(()=>{
-        getCurrentData()
+        API.getSingleProduct(parseId).then((data) => { setSingleData(data)})
+        console.log(parseId)
     },[])
     
     
@@ -40,8 +36,8 @@ const Single = ({}) => {
         <div>
             <ProductTitle />
             <Grid container className={classes.root} spacing={2}>
-                <SingleProductImg />
-                <SingleProductiformation />
+                <SingleProductImg singleData={singleData} />
+                <SingleProductiformation singleData={singleData} />
                 <Details />
 
             </Grid>
